@@ -1,16 +1,23 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+  border-radius: 8px;
 }
 
-* {
-  box-sizing: border-box;
+html {
+  font-family: Inter, sans-serif;
+  @apply antialiased text-gray-900;
+}
+
+h2 {
+  @apply font-medium text-xl;
 }
